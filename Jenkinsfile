@@ -32,7 +32,7 @@ pipeline {
                     sh '''
                     'docker push ${DOCKER_HUB_REPO}:${BUILD_NUMBER}'
                     'docker rmi ${DOCKER_HUB_REPO}:${BUILD_NUMBER}'
-                    sh '''
+                    '''
                 }
             }
         }
